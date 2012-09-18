@@ -39,7 +39,7 @@
 			if($id == "admin" && $pwd == "dee3d9026fdbf7c11e4f18858933cd5ecf88d9b8"){
 				
 				$_SESSION['login']=$id;
-				header("Location:accueil.php");
+				header("Location:private.php");
 				
 			}
 			
