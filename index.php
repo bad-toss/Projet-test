@@ -1,9 +1,8 @@
 <?php
-	
-	session_start();
 
+session_start();
+$_SESSION['login']=null;
 ?>
-
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -22,6 +21,7 @@
 				else
 					echo "<a href=\"login.php\">Page de connexion</a>";
 			?>
+
 		</div>
 		
 		<div id='foot'>
