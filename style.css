@@ -1,0 +1,17 @@
+body {
+
+}
+
+#head
+{
+	width:100%;
+	height:20%;
+	border:dashed grey;
+}
+#corp
+{
+	margin-top:2%;
+	width:100%;
+	height:60%;
+	border:solid grey;
+}
