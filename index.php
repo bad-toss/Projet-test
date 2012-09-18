@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$_SESSION['login']=null;
+
 ?>
 <html>
 	<head>
@@ -17,7 +17,7 @@ $_SESSION['login']=null;
 		<div id='corp'>
 			<?php
 				if(isset($_SESSION['login']))
-					echo "<a href=\"accueil.php\">Page secrete</a>";
+					echo "<a href=\"private.php\">Page secrete</a>";
 				else
 					echo "<a href=\"login.php\">Page de connexion</a>";
 			?>

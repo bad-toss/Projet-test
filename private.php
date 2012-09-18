@@ -8,7 +8,7 @@ if($_SESSION['login']==null)
 }
 ?>
 
-<h1>Accueils</h1>
+<h1>Page secrete</h1>
 
 <?php
 
