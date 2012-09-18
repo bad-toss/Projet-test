@@ -3,7 +3,7 @@ session_start();
 
 if($_SESSION['login']==null)
 {
-    header("HTTP/1.1 401 Unauthorized" );
+    header('HTTP/1.1 403 Forbidden');
     exit;	
 }
 ?>
