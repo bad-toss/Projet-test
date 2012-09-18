@@ -9,3 +9,12 @@ if($_SESSION['login']==null)
 ?>
 
 <h1>Accueils</h1>
+
+<?php
+
+	echo "Bonjour ".$_SESSION['login'];
+
+?>
+<br/>
+<a href="index.php">Retour</a><br/>
+<a href="deco.php">Deconnexion</a>
