@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	
+	
 	/*if(substr($_SERVER['SERVER_PROTOCOL'],0,5)!=='HTTPS'){
 		var_dump($_SERVER['SERVER_PROTOCOL']);	
 	}*/
