@@ -11,7 +11,7 @@
 <body>
 
 	<div id="authentification">
-		<form method="POST" action="index.php">
+		<form method="POST" action="login.php">
 			Login :
 			<input type="text" name="id" />
 			<br/>
@@ -27,9 +27,9 @@
 		if(isset($_POST['validate'])){
 			
 			$id = $_POST['id'];
-			$pwd = md5($_POST['pwd']);
+			$pwd = sha1($_POST['pwd']."grain");
 			
-			if($id == "admin" && $pwd == "5f4dcc3b5aa765d61d8327deb882cf99"){
+			if($id == "admin" && $pwd == "dee3d9026fdbf7c11e4f18858933cd5ecf88d9b8"){
 				
 				header("Location:accueil.html");
 				
