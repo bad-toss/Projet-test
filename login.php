@@ -9,10 +9,10 @@
 
 <html lang="fr">
 <head>
-	
+	<link rel="stylesheet" type="text/css" href="style.css">
   	<meta charset="UTF-8">
 
-  	<title>Minisite</title>
+  	<title>Mini-site</title>
   	
 </head>
 <body>

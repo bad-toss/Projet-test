@@ -1,17 +1,88 @@
 body {
+	
+	margin: 0;
+	padding: 0;
+	background: #fff;
 
 }
 
-#head
-{
-	width:100%;
-	height:20%;
-	border:dashed grey;
+#conteneur {
+		
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	
 }
-#corp
-{
-	margin-top:2%;
-	width:100%;
-	height:60%;
-	border:solid grey;
+
+#head{
+	
+	padding: 10px;
+	width: 880px;
+	height: 130px;
+	line-height: 130px;
+	background: teal;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom:10px;
+	box-shadow: 5px 5px 12px #000;
+	
+}
+
+#head h1 {
+	
+	margin: 0;
+	display:inline-block;
+	vertical-align: middle;
+	
+}
+
+#menu {
+	
+	padding: 10px;
+	width: 180px;
+	float: left;
+	background: teal;
+	border-radius: 5px;
+	height: 400px;
+	box-shadow: 5px 5px 12px #000;
+	
+}
+
+#corp{
+	
+	margin-left: 210px;
+	padding: 10px;
+	width:670px;
+	background: teal;
+	border-radius: 5px;
+	height: 400px;
+	box-shadow: 5px 5px 12px #000;
+	
+}
+
+#foot {
+	
+	padding: 10px;
+	width: 880px;
+	height: 30px;
+	background: teal;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 12px #000;
+	
+}
+
+#authentification {
+	
+	padding: 10px;
+	background: teal;
+	box-shadow: 5px 5px 12px #000;
+	border-radius: 5px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	
 }
