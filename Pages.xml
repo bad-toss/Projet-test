@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<page id="1" acess="public">
+		<title>Accueil</title>
+		<subpages>
+			<page id="2" access="public">
+				<title>Introduction</title>
+			</page>
+			<page id="3" access="protected">
+				<title>Espace Membre</title>
+			</page>
+			<page id="4" access="public">
+				<title>Connexion</title>
+			</page>		
+		</subpages>
+	</page>
+</root>
