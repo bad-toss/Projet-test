@@ -2,7 +2,21 @@
 
 session_start();
 
+$_SESSION['currentAddr']=$_SERVER['REMOTE_ADDR'];
+
+include ("control.function.php");
+
+$isLogged=isLogged($_SESSION['login']);
+
+if(!isset($isLogged)){
+	
+    header('HTTP/1.1 403 Forbidden',true,403);
+    exit;	
+	
+}
+
 ?>
+
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">

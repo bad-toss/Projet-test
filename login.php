@@ -1,8 +1,20 @@
 <?php
-	session_start();
-	/*if(substr($_SERVER['SERVER_PROTOCOL'],0,5)!=='HTTPS'){
-		var_dump($_SERVER['SERVER_PROTOCOL']);	
-	}*/
+
+session_start();
+
+$_SESSION['currentAddr']=$_SERVER['REMOTE_ADDR'];
+
+include ("control.function.php");
+
+$isLogged=isLogged($_SESSION['login']);
+
+if(!isset($isLogged)){
+	
+    header('HTTP/1.1 403 Forbidden',true,403);
+    exit;	
+	
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +51,7 @@
 			if($id == "admin" && $pwd == "dee3d9026fdbf7c11e4f18858933cd5ecf88d9b8"){
 				
 				$_SESSION['login']=$id;
+				$_SESSION['sessionAddr']=$_SERVER['REMOTE_ADDR'];
 				header("Location:private.php");
 				
 			}

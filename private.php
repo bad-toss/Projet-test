@@ -1,11 +1,20 @@
 <?php
+
 session_start();
 
-if(!isset($_SESSION['login']))
-{
+$_SESSION['currentAddr']=$_SERVER['REMOTE_ADDR'];
+
+include ("control.function.php");
+
+$isLogged=isLogged($_SESSION['login']);
+
+if(!isset($isLogged)){
+	
     header('HTTP/1.1 403 Forbidden',true,403);
     exit;	
+	
 }
+
 ?>
 
 <html>
@@ -21,18 +30,14 @@ if(!isset($_SESSION['login']))
 			
 			<div id="menu">
 				<?php
-					if(isset($_SESSION['login'])){
-						echo "<a href=\"index.php\">Accueil</a><br/>";
-						echo "<a href=\"deco.php\">Deconnexion</a>";
-					}else
-						echo "<a href=\"login.php\">Page de connexion</a>";
+					echo "<a href=\"index.php\">Accueil</a><br/>";
+					echo "<a href=\"deco.php\">Deconnexion</a>";
 				?>
 			</div>
 			
 			<div id='corp'>
 				<?php
-					if(isset($_SESSION['login']))
-						echo "Bonjour ".$_SESSION['login'];
+					echo "Bonjour ".$_SESSION['login'];
 				?>
 			</div>
 			
